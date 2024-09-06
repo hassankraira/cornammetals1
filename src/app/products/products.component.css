@@ -1,0 +1,19 @@
+.comming-soon{
+    width: 100%;
+    font-size: 150px;
+    background-color: #232B43!important;
+    color: #C4234B	;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+@media (max-width: 768px) {
+    .comming-soon{
+        font-size: 70px;
+        padding-top: 50%;
+        padding-bottom: 50%;
+
+    }
+}

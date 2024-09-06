@@ -1,0 +1,674 @@
+.logo{
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 150px;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.alllogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-left: 28%;
+    margin-top: 10%;
+    justify-content: center;
+ 
+}
+.alllogos:hover .sspan span {
+  color: #C4234B; /* Change to your desired hover color */
+}
+
+.alllogos:hover .logo .stone-blocks span {
+  color: #C4234B; /* Change to your desired hover color */
+}
+
+.alllogos:hover .stone-block {
+  background-color: #C4234B; /* Change to your desired hover color */
+}
+  .logo span {
+    display: inline-block;
+    font-size: 150px; 
+    font-weight: bold;
+    color: #ffffff; 
+    opacity: 0;
+    animation: fall 0.1s forwards;
+  }
+  .logo:hover span{
+    color: #C4234B;
+  }
+.sss {
+  color: #000000;
+}
+  @keyframes fall {
+    0% {
+      transform: translateY(-100vh); 
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(50vh);
+      opacity: 1; 
+    }
+    100% {
+      transform: translateY(0); 
+      opacity: 1;
+    }
+  }
+  
+  .logo span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .logo span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .logo span:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
+  .logo span:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .logo span:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .logo span:nth-child(6) {
+    animation-delay: 1.3s;
+  }
+
+  .stone-blocks {
+    padding-left: 2%;
+        display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 5px; 
+    opacity: 0;
+    animation: blocksfall 0.1s forwards;
+    animation-delay: 1.7s; 
+  }
+  @keyframes blocksfall {
+    0% {
+        transform: translateY(-100vh); 
+        opacity: 0;
+      }
+  
+      100% {
+        transform: translateY(0); 
+        opacity: 1;
+      }
+  }
+  .stone-block {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+  }
+  .alllogos .logo .stone-blocks span {
+    font-size: 66.5px;
+    color: rgb(255, 255, 255);
+    margin-top: -1.5%;
+}
+
+  .stone-block.small {
+    width: 60px;
+    height: 53px; 
+  }
+
+  .stone-block.medium {
+    width: 100px; 
+    height: 53px;
+  }
+  .stone-block.large {
+    width: 180px;
+    height: 53px;
+  }
+  
+
+  @media (min-width:1080px) {
+    span{
+        font-size: 40px;
+    }
+  }
+  .sec2 {
+    margin-top: 25%;
+    height: 400px;
+    width:100%;
+    background: url(https://mohamedkassem.club/krira/CornamMetals/assets/HHH.jpg) no-repeat center center;
+   
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    align-content: center;
+    font-size: 70px;
+    border-radius: 20px;
+    font-family: math;
+    color: #C4234B;
+    overflow: hidden;
+    margin-left: 110%;
+    opacity: 0;
+}
+.sec2:hover{
+  color: #000000;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+
+}
+.visible {
+  opacity: 1;
+  animation: rotation 1s forwards;
+}
+
+@keyframes rotation {
+  0% {
+    margin-left: -200%;
+    width: 150%;
+    opacity: 0;
+  }
+  50% {
+  
+
+    opacity: 0.5;
+
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+  
+  .sec2-info{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+  }
+  .sec3.griditem {
+    perspective: 1000px;
+    margin-top: 10%;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    margin-left: 110%;
+  }
+  
+  .griditem-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+  }
+  
+  .sec3.griditem:hover .griditem-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .griditem-front,
+  .griditem-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  .griditem-front {
+    background-color: #C4234B;
+    display: flex;
+    font-size: 40px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .griditem-back {
+    background-color: #C4234B;
+    transform: rotateX(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .griditem img {
+    width: 25%;
+    height: 70px;
+    margin-top: 40px;
+  }
+  
+  .griditem button {
+    width: 75%;
+    background: none;
+    color: #c205fa;
+    border-color: #c205fa;
+    font-size: 17px;
+  }
+  
+  .griditem-back li {
+    font-weight: 600;
+    text-align: justify;
+    font-size: 85%;
+  }
+  
+  .griditem-back img {
+    margin-top: 10%;
+    width: 20%;
+    margin-left: 65%;
+    height: 50px;
+  }
+  
+  .griditem-back ul {
+    margin-top: 35%;
+    color: #330740;
+    margin-left: -85%;
+  }
+.sec4{
+  margin-top: 10%;
+  width: 100%;
+  height: 1000px;
+  color: #ffffff;
+  font-family: sans-serif;
+
+  margin-left: 5%;
+  display: flex;
+  margin-right: 5%;
+}
+.sec4-1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  width: 27.333333%;
+  height: 33.333333%;
+  opacity: 0;
+}
+.sec4-2{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  margin-left: -29.7%;
+  width: 27.333333%;
+  margin-top: 25.333333%;
+  height: 33.333333%;
+  opacity: 0;
+}
+.sec4-3{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  margin-left: 0%;
+  width: 27.333333%;
+  height: 33.333333%;
+  opacity: 0;
+
+}
+.sec4-1, .sec4-2, .sec4-3 {
+  background-color: #ffffffff;
+  color: #000000;
+  transform: translateY(-100%); 
+  box-shadow: 0px 10px 20px rgb(255 255 255 / 72%);
+}
+.sec4-1:hover, .sec4-2:hover, .sec4-3:hover {
+  background-color: #C4234B	;
+  color: #000000;
+  transform: translateY(-100%); 
+  box-shadow: 0px 10px 20px rgb(196 35 75/ 72%);
+
+}
+.ffall.sec4-2{
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+.ffall.sec4-3{
+  animation-delay: 1s;
+  opacity: 0;
+}
+.visible2 {
+  animation: falldown 0.5s forwards;
+  opacity: 1; 
+}
+
+@keyframes falldown {
+  from {
+    transform: translateY(-1000%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sec4-logo{
+  background: url(	https://mohamedkassem.club/krira/CornamMetals/assets/icon.png) no-repeat;
+  width: 30%;
+    height: 40%;
+  background-size: 100%;
+  background-position: center;
+  opacity: 0;
+
+ 
+}
+.ffall.sec4-logo{
+  animation-delay:1s;
+  opacity: 0;
+
+}
+
+.sec5{
+  width: 100%;
+  color: #ffffff;
+  height: 1000px;
+  margin-left: 5%;
+  font-family: sans-serif;
+
+  display: flex;
+  margin-right: 5%;
+}
+.sec5-1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 27px;
+  width: 27.333333%;
+  margin-top: -15%;
+  height: 33.333333%;
+  opacity: 0;
+}
+.sec5-2{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  margin-left: -29.7%;
+  width: 27.333333%;
+  margin-top: 10%;
+  height: 33.333333%;
+  opacity: 0;
+}
+
+.sec5-3{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  margin-left: 0%;
+  margin-top: -15%;
+  width: 27.333333%;
+  height: 33.333333%;
+  opacity: 0;
+
+}
+.sec5-1, .sec5-2, .sec5-3 {
+  background-color: #C4234B	; 
+  color: #000000; 
+  transform: translateY(-100%);
+  box-shadow: 0px 10px 20px rgb(196 35 75/ 72%);
+}
+.sec5-1:hover, .sec5-2:hover, .sec5-3:hover {
+
+  background-color: #ffffffff; 
+  color: #000000; 
+  box-shadow: 0px 10px 20px rgb(255 255 255 / 72%);
+  transform: translateY(-100%);
+
+}
+.sec5-title{
+  font-family: sans-serif;
+  font-size: 80px;
+  color: #ffffffff;
+  text-align: center;
+  margin-top: -16%;
+  padding: 80px;
+  width: 19.333333%;
+
+}
+.sec5-title p:hover{
+  color: #C4234B	;
+}
+.ffall.sec5-title{
+  animation-delay: 1s;
+  opacity: 0;
+
+}
+.ffall.sec5-2{
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+.ffall.sec5-3{
+  animation-delay: 1s;
+  opacity: 0;
+}
+.sec6{
+  
+  background: url(https://mohamedkassem.club/krira/CornamMetals/assets/hehe.jpg);
+  background-size: cover;
+  width: 100%;
+}
+.sec6-info{
+  font-size: 80px;
+  text-align: center;
+  color: #C4234B;
+  font-family: sans-serif;
+  margin-top: -25%;
+  padding: 30%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media (max-width: 670px) {
+  .logo span {
+    font-size: 68px;
+  }
+  .alllogos{
+    padding-bottom: 120%;
+    margin-left: 8%;
+
+  }
+  .stone-blocks {
+    gap: 2px;
+    padding-left: 0;
+  }
+
+  .alllogos .logo .stone-blocks span {
+    font-size: 35px;
+    margin-top: -1.5%;
+  }
+
+  .stone-block.small {
+    width: 25px;
+    height: 30px; 
+  }
+
+  .stone-block.medium {
+    width:45px; 
+    height: 30px;
+  }
+
+  .stone-block.large {
+    width:80px;
+    height: 30px;
+  }
+
+  .sec2 {
+    font-size: 35px;
+    margin-left: 0;
+    height: 200px;
+    margin-top: 20%;
+  }
+
+  .sec3.griditem {
+    height: 150px;
+    margin-top: 5%;
+  }
+
+  .griditem-front {
+    font-size: 25px;
+  }
+
+  .griditem-back {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .sec4, .sec5 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .sec4-1, .sec4-2, .sec4-3, .sec5-1, .sec5-2, .sec5-3 {
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+    margin: 5% 0;
+  }
+  .sec4-1 , .sec5-1{
+    order: 2;
+  }
+  .sec4-2 , .sec5-2{
+    order: 3;
+  }
+  .sec4-3 , .sec5-3{
+    order: 4;
+  }
+  .sec4-logo {
+    order:1;
+    width: 58%;
+    height: 190px;
+    opacity: 1;
+    animation-delay:0.2s;
+
+  }
+
+  .sec5-title {
+    order: 1;
+    font-size: 40px;
+    margin-top: -8%;
+    padding: 40px;
+    width: 90%;
+    animation-delay:0.2s;
+
+  }
+
+  .sec6-info {
+    font-size: 40px;
+    margin-top: 2%;
+    padding: 40%;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .logo {
+    font-size: 100px;
+  }
+
+  .alllogos {
+    margin-top: 5%;
+  }
+
+  .logo span {
+    font-size: 100px;
+  }
+
+  .stone-blocks {
+    padding-left: 1%;
+    gap: 3px;
+  }
+
+  .alllogos .logo .stone-blocks span {
+    font-size: 50px;
+  }
+
+  .stone-block.small {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stone-block.medium {
+    width: 70px;
+    height: 40px;
+  }
+
+  .stone-block.large {
+    width: 120px;
+    height: 40px;
+  }
+
+  .sec2 {
+    margin-top: 15%;
+    height: 300px;
+    font-size: 50px;
+  }
+
+  .sec3.griditem {
+    margin-top: 7%;
+    height: 250px;
+  }
+
+  .griditem-front {
+    font-size: 30px;
+  }
+
+  .griditem-back {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .sec4, .sec5 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: auto;
+  }
+
+  .sec4-1, .sec4-2, .sec4-3, .sec5-1, .sec5-2, .sec5-3 {
+    width: 80%;
+    height: auto;
+    font-size: 25px;
+    margin: 4% 0;
+  }
+
+  .sec4-logo {
+    width: 50%;
+    height: 150px;
+  }
+
+  .sec5-title {
+    font-size: 60px;
+    padding: 60px;
+    width: 80%;
+  }
+
+  .sec6-info {
+    font-size: 50px;
+    padding: 25%;
+  }
+}

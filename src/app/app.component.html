@@ -1,0 +1,52 @@
+
+<nav class="main-nav">
+<a class="selected" (click)="appComponent.selected([A,P,S,C,a,p,s,c],H,h)" #h routerLink="/Home">Home</a>
+<a #a (click)="appComponent.selected([H,P,S,C,h,p,s,c],A,a)" routerLink="/AboutUs">About Us</a>
+<a #p (click)="appComponent.selected([H,A,S,C,h,a,s,c],P,p)" routerLink="/products">
+  products
+</a>
+
+<a  (click)="appComponent.selected([A,P,S,C,a,p,s,c],H,h)"  routerLink="/Home">
+  <img src="assets/icon3.png" class="icon" alt="">
+</a>
+<a (click)="appComponent.selected([H,A,P,C,h,a,p,c],S,s)" #s routerLink="/Services">
+  Services
+</a>
+<a #c (click)="appComponent.selected([H,A,P,S,h,a,p,s],C,c)" routerLink="/Contact">
+  Contact
+</a>
+
+
+<div class="menu">
+  <a  class="lang">
+
+    <img src="assets/languages.png" alt="">
+  </a>
+    <div class="dropdown">
+    <a href="#">Arabic</a>
+    <a href="#">English </a>
+    <a href="#">French</a>
+  </div>
+</div>
+</nav>
+
+  <a class="imgbast" (click)="appComponent.selected([p,a,s,c,P,A,S,C],h,H)" routerLink="/Home">
+    <img src="assets/icon3.png" class="icon" alt="">
+  </a>
+<div class="side-menu">
+  
+  <button class="menu-close" (click)="closeMenu()">×</button>
+  <a class="selected" (click)="appComponent.selected([A,P,S,C,a,p,s,c],H,h)" #H routerLink="/Home">Home</a>
+  <a #A (click)="appComponent.selected([H,P,S,C,h,p,s,c],A,a)" routerLink="/AboutUs">About Us</a>
+  <a #P (click)="appComponent.selected([H,A,S,C,h,a,s,c],P,p)" routerLink="/products">Products</a>
+ 
+  <a (click)="appComponent.selected([H,A,P,C,h,a,p,c],S,s)" #S routerLink="/Services">Services</a>
+  <a #C (click)="appComponent.selected([H,A,P,S,h,a,p,s],C,c)" routerLink="/Contact">Contact</a>
+  <a>
+    <img src="assets/languages.png" alt="">
+  </a>
+</div>
+
+<button class="menu-toggle" (click)="openMenu()">☰</button>
+<router-outlet ></router-outlet>
+<app-buttom></app-buttom>
